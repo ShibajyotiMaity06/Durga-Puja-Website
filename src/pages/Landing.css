@@ -1,0 +1,93 @@
+.landing-root {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.landing-bg {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  filter: brightness(0.98);
+}
+
+/* Small yellow title at top */
+.landing-header {
+  position: absolute;
+  top: 32px;
+  left: 44px;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+
+.landing-title {
+  font-size: 1.2rem;
+  color: #ffef75;
+  font-weight: 600;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.18);
+  margin-right: 18px;
+  letter-spacing: 0.6px;
+  background: rgba(30,22,8,0.03);
+  padding: 2.5px 10px;
+  border-radius: 4px;
+}
+
+.landing-year {
+  font-size: 1rem;
+  color: #fff3b0;
+  background: rgba(30,22,8,0.10);
+  padding: 2.5px 8px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.glass-btn {
+  position: absolute;
+  z-index: 100;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 220px;
+  padding: 14px 34px;
+  font-size: 1.22em;
+  font-weight: 700;
+  color: #fff9ed;
+  background: rgba(230, 229, 227, 0.23);
+  backdrop-filter: blur(10px);
+  border: 2px solid #ffe066;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(88, 62, 0, 0.18);
+  text-shadow: 0 2px 16px rgba(0,0,0,0.33);
+  transition: box-shadow 0.24s, background 0.19s, border-color 0.19s;
+  cursor: pointer;
+  outline: none;
+}
+
+.glass-btn:hover, .glass-btn:focus {
+  background: rgba(255, 240, 150, 0.38);
+  box-shadow: 0 10px 28px rgba(88,62,0,0.24);
+  border-color: #ffd900;
+  color: #ffe066;
+}
+
+.dev-signature {
+  position: absolute;
+  bottom: 18px;
+  right: 28px;
+  font-size: 0.98em;
+  color: #ebc823;
+  background: rgba(34,27,8,0.09);
+  padding: 4px 14px;
+  border-radius: 6px;
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
+  letter-spacing: 1px;
+  opacity: 0.92;
+  z-index: 4;
+  font-weight: 500;
+}

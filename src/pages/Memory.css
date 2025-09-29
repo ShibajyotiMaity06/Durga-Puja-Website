@@ -1,0 +1,70 @@
+.memory-root {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #111; /* fallback background color for letterbox effect */
+}
+
+.memory-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain; /* show whole image with letterboxing if needed */
+  object-position: center center;
+  filter: brightness(1.10) saturate(1.05);
+  z-index: 1;
+  background: #111;
+}
+
+.memory-title {
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #fff9e0;
+  background: rgba(15, 13, 10, 0.19);
+  border-radius: 10px;
+  padding: 0.3em 1.7em;
+  z-index: 2;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.14);
+  letter-spacing: 1px;
+}
+
+.memory-content-btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass-btn {
+  min-width: 190px;
+  padding: 14px 32px;
+  font-size: 1em;
+  font-weight: 700;
+  color: #fffefc;
+  background: rgba(255, 240, 150, 0.22);
+  backdrop-filter: blur(11px);
+  border: 2px solid #ffe066;
+  border-radius: 13px;
+  box-shadow: 0 8px 32px rgba(88, 62, 0, 0.17);
+  text-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  cursor: pointer;
+  outline: none;
+  transition: box-shadow 0.24s, background 0.19s, border-color 0.19s;
+}
+
+.glass-btn:hover, .glass-btn:focus {
+  background: rgba(255, 240, 150, 0.34);
+  border-color: #ffde3f;
+  color: #ffe066;
+}

@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Landing from './pages/Landing';
+import Memory from './pages/Memory';
+import HomeMain from './pages/HomeMain';
+import History from './pages/History';
+import PastEvents from './pages/PastEvents';
+import UpcomingEvents from './pages/UpcomingEvents';
+import OfficeBearers from './pages/OfficeBearers';
+import Members from './pages/Members';
+import TopDonors from './pages/TopDonors';
+import Registration from './pages/Registration';
+import Donations from './pages/Donations';
+import TransitionWrapper from './components/TransitionWrapper';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <TransitionWrapper>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/memory" element={<Memory />} />
+          <Route path="/main" element={<HomeMain />}>
+            <Route path="history" element={<History />} />
+            <Route path="past-events" element={<PastEvents />} />
+            <Route path="upcoming-events" element={<UpcomingEvents />} />
+            <Route path="office-bearers" element={<OfficeBearers />} />
+            <Route path="members" element={<Members />} />
+            <Route path="top-donors" element={<TopDonors />} />
+            <Route path="new-registration" element={<Registration />} />
+            <Route path="donations" element={<Donations />} />
+          </Route>
+        </Routes>
+      </TransitionWrapper>
+    </BrowserRouter>
   );
 }
 
