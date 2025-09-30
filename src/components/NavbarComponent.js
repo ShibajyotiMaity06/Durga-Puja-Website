@@ -18,7 +18,7 @@ const NavbarComponent = () => {
   const location = useLocation();
 
   React.useEffect(() => {
-    setOpen(false); // close on route change
+    setOpen(false);
   }, [location.pathname]);
 
   return (

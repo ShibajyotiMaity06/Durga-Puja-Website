@@ -16,7 +16,6 @@
   filter: brightness(0.98);
 }
 
-/* Small yellow title at top */
 .landing-header {
   position: absolute;
   top: 32px;

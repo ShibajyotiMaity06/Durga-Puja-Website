@@ -3,7 +3,7 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: #111; /* fallback background color for letterbox effect */
+  background: #111; 
 }
 
 .memory-bg {
@@ -12,7 +12,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  object-fit: contain; /* show whole image with letterboxing if needed */
+  object-fit: contain; 
   object-position: center center;
   filter: brightness(1.10) saturate(1.05);
   z-index: 1;
@@ -45,6 +45,30 @@
   align-items: center;
   justify-content: center;
 }
+
+.memory-title-btn {
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #fff9e0;
+  background: rgba(15, 13, 10, 0.19);
+  border-radius: 10px;
+  padding: 0.3em 1.7em;
+  z-index: 2;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.14);
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.memory-title-btn:hover {
+  background: rgba(15, 13, 10, 0.35);
+}
+
 
 .glass-btn {
   min-width: 190px;

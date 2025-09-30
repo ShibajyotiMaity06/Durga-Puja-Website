@@ -4,11 +4,17 @@ import './Memory.css';
 
 const Memory = () => {
   const navigate = useNavigate();
+
   return (
     <div className="memory-root">
       <img src="/Second.png" alt="In Loving Memory Collage" className="memory-bg" />
-      <div className="memory-content">
-        <div className="memory-title">In Loving Memory</div>
+      <button
+        className="memory-title-btn"
+        onClick={() => navigate('/past-members')}
+      >
+        In Loving Memory
+      </button>
+      <div className="memory-content-btn">
         <button
           className="glass-btn"
           onClick={() => navigate('/main/history')}

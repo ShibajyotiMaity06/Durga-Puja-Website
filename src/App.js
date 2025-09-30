@@ -12,6 +12,7 @@ import TopDonors from './pages/TopDonors';
 import Registration from './pages/Registration';
 import Donations from './pages/Donations';
 import TransitionWrapper from './components/TransitionWrapper';
+import MemoryMembers from './pages/MemoryMembers';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/memory" element={<Memory />} />
+          
+<Route path="/past-members" element={<MemoryMembers />} />
           <Route path="/main" element={<HomeMain />}>
             <Route path="history" element={<History />} />
             <Route path="past-events" element={<PastEvents />} />
