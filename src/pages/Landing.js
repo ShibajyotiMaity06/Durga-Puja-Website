@@ -1,12 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Landing.css';
+import FlowerThrower from '../components/FlowerThrower';
 
 const Landing = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="landing-root">
+    <div className="landing-root"
+    style={{ cursor: "url('/cursor.png') 16 16, auto" }}
+    >
+      <FlowerThrower />
       <img src="/First.png" alt="Durga Puja" className="landing-bg" />
       <div className="landing-header">
         <span className="landing-title">Durga Puja Association, Visakhapatnam</span>
