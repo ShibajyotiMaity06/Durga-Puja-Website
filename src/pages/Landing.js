@@ -13,8 +13,8 @@ const Landing = () => {
       <FlowerThrower />
       <img src="/First.png" alt="Durga Puja" className="landing-bg" />
       <div className="landing-header">
-        <span className="landing-title">Durga Puja Association, Visakhapatnam</span>
-        <span className="landing-year">Estd. 1935</span>
+        <span className="landing-title">One Town Bengali Association , Visakhapatnam</span>
+        <span className="landing-year">Estd 1929</span>
       </div>
       <button className="glass-btn" onClick={() => navigate('/memory')}>
         In Loving Memory
