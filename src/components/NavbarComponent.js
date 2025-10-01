@@ -8,7 +8,7 @@ const navLinks = [
   { path: '/main/upcoming-events', label: 'Upcoming Events' },
   { path: '/main/office-bearers', label: 'Office Bearers' },
   { path: '/main/members', label: 'List of Members' },
-  { path: '/main/top-donors', label: 'Top 10 Donors' },
+  { path: '/main/top-donors', label: 'Top 10 Donors of Decade' },
   { path: '/main/new-registration', label: 'New Registration' },
   { path: '/main/donations', label: 'Donations' }
 ];
@@ -25,7 +25,7 @@ const NavbarComponent = () => {
     <nav className="nav">
       <div className="nav-logo">
         <Link to="/" style={{ textDecoration: 'none', color: '#211c0d' }}>
-          Durga Puja Association
+          Bengali Association
         </Link>
       </div>
       <div className={`nav-links ${open ? 'active' : ''}`}>
