@@ -7,7 +7,7 @@ const Memory = () => {
 
   return (
     <div className="memory-root">
-      <img src="/Second.png" alt="In Loving Memory Collage" className="memory-bg" />
+      <img src="/Second1.png" alt="In Loving Memory Collage" className="memory-bg" />
       <button
         className="memory-title-btn"
         onClick={() => navigate('/past-members')}
